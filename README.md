@@ -1,4 +1,4 @@
-# thraex-ui
+# THRAEX-UI
 
 ## Project setup
 ```
