@@ -3,7 +3,7 @@
     <navbar />
     <div>
       Launchpad Container
-      <router-view />
+      <router-view :key="key"/>
     </div>
   </div>
 </template>
@@ -14,6 +14,11 @@ export default {
   name: 'Layout',
   components: {
     Navbar
+  },
+  computed: {
+    key() {
+      return this.$route.path
+    }
   }
 }
 </script>

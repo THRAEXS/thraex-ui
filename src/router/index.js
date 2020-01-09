@@ -6,7 +6,17 @@ Vue.use(Router)
 import Layout from '@/layout'
 
 const routes = [
-  { path: '/404', component: () => import('@/views/404') },
+  {
+    path: '/404',
+    component: Layout,
+    children: [
+      {
+        path: '',
+        name: 'Page404',
+        component: () => import('@/views/404')
+      }
+    ]
+  },
   {
     path: '/',
     component: Layout,
@@ -17,7 +27,19 @@ const routes = [
         name: 'Launchpad',
         alias: '/',
         component: () => import('@/views/launchpad/index'),
-        meta: { title: 'Dashboard', icon: 'dashboard' }
+        meta: { title: 'Launchpad' }
+      }
+    ]
+  },
+  {
+    path: '/dashboard',
+    component: Layout,
+    children: [
+      {
+        path: '',
+        name: 'Dashboard',
+        component: () => import('@/views/dashboard/index'),
+        meta: { title: 'Dashboard' }
       }
     ]
   },
