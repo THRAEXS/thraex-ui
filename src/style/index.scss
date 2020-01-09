@@ -1,0 +1,21 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+  //background-color: rgb(40, 41, 35);
+  //color: #FFFFFF;
+}
+
+#app {
+  height: 100%;
+}
+
+.br-a { border: 1px solid; }
+.cursor-p { cursor: pointer; }

@@ -1,7 +1,7 @@
 <template>
   <div>
     <navbar />
-    <div>
+    <div class="main-container">
       Launchpad Container
       <router-view :key="key"/>
     </div>
@@ -22,3 +22,8 @@ export default {
   }
 }
 </script>
+<style lang="scss" scoped>
+body {
+  background-color: rgb(40, 41, 35);
+}
+</style>
