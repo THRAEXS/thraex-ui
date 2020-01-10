@@ -2,7 +2,6 @@
   <div>
     <navbar />
     <div class="main-container">
-      Launchpad Container
       <router-view :key="key"/>
     </div>
   </div>
